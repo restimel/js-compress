@@ -1,0 +1,39 @@
+{
+  "name": "js-compress",
+  "version": "1.0.0",
+  "description": "A tool to compress JS strings (mainly JSON) using Huffman compression.",
+  "main": "dist/jsCompress.common.js",
+  "module": "dist/jsCompress.esm.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "npm run build:bundle",
+    "build:bundle": "rollup -c",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restimel/js-compress.git"
+  },
+  "keywords": [
+    "JSON",
+    "compression",
+    "zip",
+    "huffman",
+    "javascript"
+  ],
+  "author": "Restimel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restimel/js-compress/issues"
+  },
+  "homepage": "https://github.com/restimel/js-compress#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "rollup": "^1.31.1"
+  }
+}
